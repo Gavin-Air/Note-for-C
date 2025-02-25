@@ -30,11 +30,11 @@ int main()
 	int* A = (int*)calloc(num, sizeof(int));
 	for (int i = 0; i < num; ++i) {
 		A[i] = rand() % 16;
-		printf(" %d ", A[i]);
+		printf(" %d", A[i]);
 	}
 	printf("\n");
 	quick_sort(A, A + num - 1);
-	for (int i = 0; i < num; ++i)printf(" %d ", A[i]);
+	for (int i = 0; i < num; ++i)printf(" %d", A[i]);
 	free(A);
 	return 0;
 }
