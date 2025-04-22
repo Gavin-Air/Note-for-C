@@ -109,8 +109,8 @@ int main()
 		cerr << "Error char in site: " << err_code;
 		return err_code;
 	}
-	pitem myqueue[128] = { 0 };
-	//pitem* myqueue = new pitem[128]();
+	//pitem myqueue[128] = { 0 };
+	pitem* myqueue = new pitem[128]();
 	Mystack* mystack = new Mystack(0);
 	int queue_len = 0;
 	int i = 0; //queueÖ¸Õë
